@@ -1,0 +1,58 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: {
+                     typeName: 'Employee',
+                     typeNamePlural: 'Employees',
+                     title: { type: #STANDARD, value: 'EmployeeId' }
+                   },
+       presentationVariant: [{
+           sortOrder: [{ by: 'EmployeeId', direction: #ASC }],
+           visualizations: [{type: #AS_LINEITEM}]
+         }]
+     }
+annotate entity Z_C_EMPLOYEE_DATA
+    with 
+{
+@UI: {
+      facet:          [
+                       { id:            'EmployeeId',
+                         purpose:       #STANDARD,
+                         type:          #IDENTIFICATION_REFERENCE,
+                         label:         'EmployeeId',
+                         position:      10
+                       }
+                      ]
+    }
+
+  @UI: {
+      lineItem:       [{ position: 20 , label: 'The emoloyee id'}],
+      identification: [{ position: 20 }]
+    }
+  EmployeeId;
+
+  @UI: {
+      selectionField: [{ position: 30 }],
+      lineItem:       [{ position: 30 }],
+      identification: [{ position: 30 }]
+    }
+  FirstName;
+
+  @UI: {
+      selectionField: [{ position: 30 }],
+      lineItem:       [{ position: 40 }],
+      identification: [{ position: 40 }]
+    }
+  LastName;
+
+  @UI: {
+      lineItem:       [{ position: 50 }],
+      identification: [{ position: 50 }]
+    }
+  Salary;
+
+  @UI: {
+      lineItem:       [{ position: 70 }],
+      identification: [{ position: 70 }]
+    }
+  Manager;
+    
+}

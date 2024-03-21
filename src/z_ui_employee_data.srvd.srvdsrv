@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defintion'
+@ObjectModel.leadingEntity.name: 'Z_C_EMPLOYEE_DATA'
+define service Z_UI_Employee_DATA {
+  expose Z_C_EMPLOYEE_DATA as Employee;
+}
