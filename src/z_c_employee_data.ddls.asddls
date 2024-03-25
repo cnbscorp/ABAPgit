@@ -17,6 +17,10 @@ define view entity Z_C_EMPLOYEE_DATA
       defaultSearchElement: true}
       FirstName,
 
+
+
+
+
       LastName,
 
       Salary,
@@ -25,6 +29,6 @@ define view entity Z_C_EMPLOYEE_DATA
 
       Manager,
 
-      /* Associations */
+      /* Associations dwadwad*/
       _Manager
 }
